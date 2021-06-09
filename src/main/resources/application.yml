@@ -1,0 +1,22 @@
+spring:  
+  jpa:  
+    hibernate:  
+      ddl-auto: create  
+    database-platform: org.hibernate.dialect.PostgreSQLDialect  
+  datasource:  
+    url: "jdbc:postgresql://keng03-dev01-ins01-wfm19-dbs-mas.int.dev.mykronos.com:5444/ppas_kkk2505"  
+    username: tkcsowner  
+    password: tkcsowner
+  rabbitmq:
+    host: "keng03-dev01-ins01-dmq10-app.int.dev.mykronos.com"
+    password: mqowner
+    port:   5672
+    username: mqowner
+
+rmq:
+  test:
+    exchange: amq.direct
+    queue: kk.test.queue
+    routingkey: kk.test.routingkey
+
+   
